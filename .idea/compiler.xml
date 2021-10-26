@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="LeapYear" target="15" />
+      <module name="LeapYear" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
