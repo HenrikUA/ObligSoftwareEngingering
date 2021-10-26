@@ -13,7 +13,7 @@ public class Leap_Years {
 
   @Test
     public void CheckIfDivBy400(){
-    boolean leap = YearsCheck.isLeapYear(2001);
+    boolean leap = YearsCheck.isLeapYear(2000);
     assertTrue(leap);
   }
 
