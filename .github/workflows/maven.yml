@@ -15,7 +15,7 @@ jobs:
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macOS-latest]
+        os: [windows-latest, macOS-latest]
 
     steps:
     - uses: actions/checkout@v2
@@ -29,12 +29,6 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-
-  - name: Publish Unit Test Results
-    uses: EnricoMi/publish-unit-test-result-action@v1
-    if: always()
-    with:
-      files: test-results/**/*.xml
 
   - name: Publish Unit Test Results
     uses: EnricoMi/publish-unit-test-result-action/composite@v1
