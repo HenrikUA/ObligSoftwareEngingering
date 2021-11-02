@@ -33,7 +33,7 @@ jobs:
 
   publish-job:
       runs-on: ${{matrix.os}}
-      needs: [ build_and_test ]
+      needs: [ build ]
 
       steps:
         - uses: actions/checkout@v2
