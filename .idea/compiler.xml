@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="LeapYear" />
+        <module name="LeapYear_Tests" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="LeapYear" target="11" />
+      <module name="LeapYear_Tests" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
