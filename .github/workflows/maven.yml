@@ -32,7 +32,10 @@ jobs:
 
 
   publish-job:
-      runs-on: windows-latest
+      runs-on: ${{matrix.os}}
+      strategy:
+        matrix:
+          os: [ ubuntu-latest, windows-latest, macOS-latest ]
       needs: [ build ]
 
       steps:
