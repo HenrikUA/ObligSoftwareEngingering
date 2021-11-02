@@ -17,6 +17,7 @@
             </plugin>
         </plugins>
     </build>
+    <!-- Build-sekvensen slutt her. -->
 
     <dependencies>
         <dependency>
