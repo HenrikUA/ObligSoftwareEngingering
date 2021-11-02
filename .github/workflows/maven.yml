@@ -12,10 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: ${{matrix.os}}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macOS-latest] #Fjernet ubuntu-latest og macOS-latest
+    runs-on: windows-latest #Fjernet ubuntu-latest og macOS-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -32,10 +29,7 @@ jobs:
 
 
   publish-job:
-      runs-on: ${{matrix.os}}
-      strategy:
-        matrix:
-          os: [ ubuntu-latest, windows-latest, macOS-latest ]
+      runs-on: windows-latest
       needs: [ build ]
 
       steps:
