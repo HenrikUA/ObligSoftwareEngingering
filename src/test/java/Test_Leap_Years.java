@@ -6,7 +6,7 @@ public class Test_Leap_Years {
 
 
   @Test
-    public void TestIfDivBy4AndNot100(){
+    public void IfDivBy4AndNot100_Tests(){
     boolean leap = YearsCheck.isLeapYear(2020);
     assertTrue(leap);
   }
