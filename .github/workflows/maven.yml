@@ -10,7 +10,7 @@ on:
     branches: [ HenrikUA-patch-1 ]
 
 jobs:
-  build_and_tests:
+  build:
 
     runs-on: ${{matrix.os}}
     strategy:
