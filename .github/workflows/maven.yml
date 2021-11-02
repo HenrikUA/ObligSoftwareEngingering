@@ -31,20 +31,5 @@ jobs:
       run: mvn -B package --file pom.xml
 
 
-    - name: Publish Unit Test Results
-      uses: EnricoMi/publish-unit-test-result-action/composite@v1
-      if: always()
-      with:
-        files: test-results/**/*.xml
 
- # java:
-  #stage: test
-  #script:
-   # - mvn verify
-  #artifacts:
-   # when: always
-    #reports:
-     # junit:
-      #  - target/surefire-reports/TEST-*.xml
-       # - target/failsafe-reports/TEST-*.xml
 
