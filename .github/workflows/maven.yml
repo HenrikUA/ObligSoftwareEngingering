@@ -24,7 +24,7 @@ jobs:
         distribution: 'adopt'
         cache: maven
 
-    - name: Build with Maven
+    - name: Build with Maven and run test
       run: mvn -B package --file pom.xml
 
 
