@@ -5,9 +5,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ HenrikUA-patch-1 ]
+    branches: [ main ]
   pull_request:
-    branches: [ HenrikUA-patch-1 ]
+    branches: [ main ]
 
 jobs:
   build:
