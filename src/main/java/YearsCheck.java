@@ -8,6 +8,3 @@ public class YearsCheck {
         } else return year % 4 == 0;
     }
 }
-// New test
-// Another comment.
-// Even another comment.
